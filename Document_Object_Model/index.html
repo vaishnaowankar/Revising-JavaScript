@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./06-textContent-and-innerText.js" defer></script>
+    <!-- defer is the best use to link js file to html -->
+    <!-- async was used before but it may lead to errors -->
     <title>My Website</title>
   </head>
   <body>
@@ -12,13 +15,15 @@
       <nav class="nav container">
         <h1 class="logo">Website</h1>
         <ul class="nav-items">
-          <li><a href="">Home</a></li>
-          <li><a href="">To-do</a></li>
-          <li><a href="">Sign Up</a></li>
+          <li class="nav-item"><a href="">Home</a></li>
+          <li class="nav-item"><a href="">To-do</a></li>
+          <li class="nav-item"><a href="">Sign Up</a></li>
         </ul>
       </nav>
       <div class="headline">
-        <h2>Manage Your Tasks</h2>
+        <h2 id="main-heading">
+          Manage Your Tasks <span style="display: none">Hello</span>
+        </h2>
         <button class="btn btn-headline">Learn More</button>
       </div>
     </header>
