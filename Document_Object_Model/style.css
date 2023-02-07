@@ -53,6 +53,14 @@ a {
   transform: translate(-50%, -50%);
 }
 
+/* This class is added to explain the concept of adding classes via javascript */
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+/* Remember the specificity of css when dealing with the 12-classList js file , if its put before any class that overwrites its background property then it would not be applied */
+
 .btn {
   display: inline-block;
   outline: none;
@@ -95,6 +103,20 @@ a {
   background: rgb(44, 55, 63);
   color: white;
   font-weight: bold;
+}
+
+.todo-list {
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-align: left;
+}
+
+.todo-list li {
+  padding: 0.7rem;
+  background-color: black;
+  color: yellow;
+  margin-top: 1rem;
+  text-transform: capitalize;
 }
 
 .section-signup {
