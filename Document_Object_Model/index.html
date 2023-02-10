@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./21-this-inside-events.js" defer></script>
+    <script src="./27-event-delegation-project.js" defer></script>
     <!-- defer is the best use to link js file to html -->
     <!-- async was used before but it may lead to errors -->
     <title>My Website</title>
@@ -35,11 +35,18 @@
       </form>
       <ul class="todo-list">
         <!-- <li class="first-todo">todo 1</li> -->
-        <li>item 1</li>
+        <!-- <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
         <li>item 4</li>
-        <li>item 5</li>
+        <li>item 5</li> -->
+        <li>
+          <span class="text">Do this</span>
+          <div class="todo-buttons">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div>
+        </li>
       </ul>
     </section>
 
