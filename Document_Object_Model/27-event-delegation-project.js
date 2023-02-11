@@ -1,5 +1,4 @@
 // Use it with index.html file
-
 // We will add the functionality to our to do list using event delegation
 
 // there is a submit event on forms , so we will select the form first
